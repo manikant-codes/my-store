@@ -52,6 +52,18 @@ function Home() {
     );
   }
 
+  if (!page) {
+    return (
+      <div className="p-8">
+        <MessageBox
+          icon={HiExclamation}
+          message={"No page found!"}
+          status="error"
+        />
+      </div>
+    );
+  }
+
   return (
     <div>
       <div>
