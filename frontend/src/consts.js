@@ -1,6 +1,7 @@
 export const COMPANY_NAME = "My Shop";
 
-export const BASE_URL = "http://localhost:5000";
+// export const BASE_URL = "http://localhost:5000";
+export const BASE_URL = "https://my-store-backend-j0yj.onrender.com";
 
 export const SIZES = [
   { value: "", text: "Select A Size" },
