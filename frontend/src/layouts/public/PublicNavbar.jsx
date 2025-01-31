@@ -12,7 +12,6 @@ function PublicNavbar() {
   const [isOpen, setIsOpen] = React.useState(false);
   const navigate = useNavigate();
 
-  const isLoggedIn = Boolean(localStorage.getItem("token"));
   const user = JSON.parse(localStorage.getItem("user"));
 
   function handleOpen() {
@@ -90,7 +89,7 @@ function PublicNavbar() {
               <HiShoppingCart className="h-5 w-5" />
             </span>
           </Button>
-          {isLoggedIn ? (
+          {user ? (
             <Dropdown
               arrowIcon={false}
               inline

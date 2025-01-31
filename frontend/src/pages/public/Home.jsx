@@ -47,7 +47,7 @@ function Home() {
   if (error) {
     return (
       <div className="p-8">
-        <MessageBox icon={HiExclamation} message={error} status="error" />
+        <MessageBox message={error} status="error" />
       </div>
     );
   }
@@ -55,11 +55,7 @@ function Home() {
   if (!page) {
     return (
       <div className="p-8">
-        <MessageBox
-          icon={HiExclamation}
-          message={"No page found!"}
-          status="error"
-        />
+        <MessageBox message={"No page found!"} status="error" />
       </div>
     );
   }

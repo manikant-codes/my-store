@@ -66,7 +66,7 @@ function SidebarListItem({ icon: Icon, link, name }) {
     <li>
       <Link
         to={link}
-        className="text-lg text-gray-600 hover:text-purple-600 flex items-center gap-2"
+        className="text-lg text-gray-600 hover:text-cyan-600 flex items-center gap-2"
       >
         <Icon className="w-5 h-5" />
         <span>{name}</span>
@@ -109,7 +109,7 @@ function Sidebar() {
       })}
       <li
         onClick={handleLogout}
-        className="text-lg cursor-pointer text-gray-600 hover:text-purple-600 flex items-center gap-2"
+        className="text-lg cursor-pointer text-gray-600 hover:text-cyan-600 flex items-center gap-2"
       >
         <HiMiniPower className="w-5 h-5" />
         <span>Log Out</span>

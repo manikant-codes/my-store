@@ -1,3 +1,4 @@
+const { FRONTEND_BASE_URL } = require("../consts");
 const { getProductPrice } = require("../helpers/priceHelpers");
 const {
   sendErrorResponse,
@@ -97,7 +98,7 @@ const createOrder = async (req, res) => {
     });
 
     // Stripe Checkout Session
-    const FRONTEND_BASE_URL = "http://localhost:5173";
+
     const line_items = orderItemsFinal.map((orderItemObject) => {
       return {
         price_data: {

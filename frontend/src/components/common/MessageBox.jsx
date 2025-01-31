@@ -1,6 +1,12 @@
 import React from "react";
+import { HiExclamation } from "react-icons/hi";
 
-function MessageBox({ message, renderIcon, icon: Icon, status = "default" }) {
+function MessageBox({
+  message,
+  renderIcon,
+  icon: Icon = HiExclamation,
+  status = "default"
+}) {
   function getIconClassName() {
     switch (status) {
       case "success":
